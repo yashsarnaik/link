@@ -829,7 +829,7 @@ html_component_2 = """
       <li class="tag__name">Streamlit</li>
       <li class="tag__name">Tableau</li>
       <li class="tag__name">PowerBI</li>
-      <li class="tag__name">Langchain/li>
+      <li class="tag__name">Langchain</li>
       <li class="tag__name">Deep Learning</li>
       <li class="tag__name">Machine Learning</li>
        
@@ -883,7 +883,7 @@ body {
   margin: 8px 6px 8px 0;
   margin-left: 0px;
   position: relative;
-  text-transform: lowercase;
+  
   cursor: pointer;
   transition: all .3s ease-in-out;
 }
