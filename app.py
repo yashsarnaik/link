@@ -3,14 +3,13 @@ st.set_page_config(page_title="portfolio",page_icon="🌐",layout="wide")
 from streamlit.components.v1 import html
 from PIL import Image
 import base64
-hide_header_style = """
-    <style>
-    header {display: none;}
-    </style>
-    """
+def load_css(file_path):
+    with open(file_path, "r") as f:
+        return f"<style>{f.read()}</style>"
 
-# Inject the CSS into the Streamlit app
-st.markdown(hide_header_style, unsafe_allow_html=True)
+# Load and inject CSS
+css = load_css("style.css")
+st.markdown(css, unsafe_allow_html=True)
 st.markdown(
     f"""
     <style>
