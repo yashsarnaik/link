@@ -59,220 +59,249 @@ salina_font_styles = f"""
 """
 
 fl="""
-<div class="boxes">
-  <div class="box">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-  <div class="box">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-  <div class="box">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
-  <div class="box">
-    <div></div>
-    <div></div>
-    <div></div>
-    <div></div>
-  </div>
+<div class="loader">
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
 </div>
 
 """
 
 fl2="""
 <style>
-.boxes {
-  --size: 30px;
-  --duration: 800ms;
-  height: calc(var(--size) * 6);
-  width: calc(var(--size) * 6 );
-  position: relative;
-  transform-style: preserve-3d;
-  transform-origin: 100% 100%;
-  margin-top: calc(var(--size) * 1.5 * -1);
-  transform: rotateX(60deg) rotateZ(45deg) rotateY(0deg) translateZ(0px);
+.loader {
+  width: 112px;
+  height: 112px;
 }
 
-.boxes .box {
-  width: var(--size);
-  height: var(--size);
-  top: 0;
-  left: 0;
+.box1,
+.box2,
+.box3 {
+  border: 16px solid #f5f5f5;
+  box-sizing: border-box;
   position: absolute;
-  transform-style: preserve-3d;
+  display: block;
 }
 
-.boxes .box:nth-child(1) {
-  transform: translate(100%, 0);
-  -webkit-animation: box1 var(--duration) linear infinite;
-  animation: box1 var(--duration) linear infinite;
+.box1 {
+  width: 112px;
+  height: 48px;
+  margin-top: 64px;
+  margin-left: 0px;
+  animation: abox1 4s 1s forwards ease-in-out infinite;
 }
 
-.boxes .box:nth-child(2) {
-  transform: translate(0, 100%);
-  -webkit-animation: box2 var(--duration) linear infinite;
-  animation: box2 var(--duration) linear infinite;
+.box2 {
+  width: 48px;
+  height: 48px;
+  margin-top: 0px;
+  margin-left: 0px;
+  animation: abox2 4s 1s forwards ease-in-out infinite;
 }
 
-.boxes .box:nth-child(3) {
-  transform: translate(100%, 100%);
-  -webkit-animation: box3 var(--duration) linear infinite;
-  animation: box3 var(--duration) linear infinite;
+.box3 {
+  width: 48px;
+  height: 48px;
+  margin-top: 0px;
+  margin-left: 64px;
+  animation: abox3 4s 1s forwards ease-in-out infinite;
 }
 
-.boxes .box:nth-child(4) {
-  transform: translate(200%, 0);
-  -webkit-animation: box4 var(--duration) linear infinite;
-  animation: box4 var(--duration) linear infinite;
-}
-
-.boxes .box > div {
-  --background: #5C8DF6;
-  --top: auto;
-  --right: auto;
-  --bottom: auto;
-  --left: auto;
-  --translateZ: calc(var(--size) / 2);
-  --rotateY: 0deg;
-  --rotateX: 0deg;
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background: var(--background);
-  top: var(--top);
-  right: var(--right);
-  bottom: var(--bottom);
-  left: var(--left);
-  transform: rotateY(var(--rotateY)) rotateX(var(--rotateX)) translateZ(var(--translateZ));
-}
-
-.boxes .box > div:nth-child(1) {
-  --top: 0;
-  --left: 0;
-}
-
-.boxes .box > div:nth-child(2) {
-  --background: #145af2;
-  --right: 0;
-  --rotateY: 90deg;
-}
-
-.boxes .box > div:nth-child(3) {
-  --background: #447cf5;
-  --rotateX: -90deg;
-}
-
-.boxes .box > div:nth-child(4) {
-  --background: #DBE3F4;
-  --top: 0;
-  --left: 0;
-  --translateZ: calc(var(--size) * 3 * -1);
-}
-
-@-webkit-keyframes box1 {
-  0%, 50% {
-    transform: translate(100%, 0);
-  }
-
-  100% {
-    transform: translate(200%, 0);
-  }
-}
-
-@keyframes box1 {
-  0%, 50% {
-    transform: translate(100%, 0);
-  }
-
-  100% {
-    transform: translate(200%, 0);
-  }
-}
-
-@-webkit-keyframes box2 {
+@keyframes abox1 {
   0% {
-    transform: translate(0, 100%);
+    width: 112px;
+    height: 48px;
+    margin-top: 64px;
+    margin-left: 0px;
+  }
+
+  12.5% {
+    width: 48px;
+    height: 48px;
+    margin-top: 64px;
+    margin-left: 0px;
+  }
+
+  25% {
+    width: 48px;
+    height: 48px;
+    margin-top: 64px;
+    margin-left: 0px;
+  }
+
+  37.5% {
+    width: 48px;
+    height: 48px;
+    margin-top: 64px;
+    margin-left: 0px;
   }
 
   50% {
-    transform: translate(0, 0);
+    width: 48px;
+    height: 48px;
+    margin-top: 64px;
+    margin-left: 0px;
+  }
+
+  62.5% {
+    width: 48px;
+    height: 48px;
+    margin-top: 64px;
+    margin-left: 0px;
+  }
+
+  75% {
+    width: 48px;
+    height: 112px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  87.5% {
+    width: 48px;
+    height: 48px;
+    margin-top: 0px;
+    margin-left: 0px;
   }
 
   100% {
-    transform: translate(100%, 0);
+    width: 48px;
+    height: 48px;
+    margin-top: 0px;
+    margin-left: 0px;
   }
 }
 
-@keyframes box2 {
+@keyframes abox2 {
   0% {
-    transform: translate(0, 100%);
+    width: 48px;
+    height: 48px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  12.5% {
+    width: 48px;
+    height: 48px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  25% {
+    width: 48px;
+    height: 48px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  37.5% {
+    width: 48px;
+    height: 48px;
+    margin-top: 0px;
+    margin-left: 0px;
   }
 
   50% {
-    transform: translate(0, 0);
+    width: 112px;
+    height: 48px;
+    margin-top: 0px;
+    margin-left: 0px;
+  }
+
+  62.5% {
+    width: 48px;
+    height: 48px;
+    margin-top: 0px;
+    margin-left: 64px;
+  }
+
+  75% {
+    width: 48px;
+    height: 48px;
+    margin-top: 0px;
+    margin-left: 64px;
+  }
+
+  87.5% {
+    width: 48px;
+    height: 48px;
+    margin-top: 0px;
+    margin-left: 64px;
   }
 
   100% {
-    transform: translate(100%, 0);
+    width: 48px;
+    height: 48px;
+    margin-top: 0px;
+    margin-left: 64px;
   }
 }
 
-@-webkit-keyframes box3 {
-  0%, 50% {
-    transform: translate(100%, 100%);
-  }
-
-  100% {
-    transform: translate(0, 100%);
-  }
-}
-
-@keyframes box3 {
-  0%, 50% {
-    transform: translate(100%, 100%);
-  }
-
-  100% {
-    transform: translate(0, 100%);
-  }
-}
-
-@-webkit-keyframes box4 {
+@keyframes abox3 {
   0% {
-    transform: translate(200%, 0);
+    width: 48px;
+    height: 48px;
+    margin-top: 0px;
+    margin-left: 64px;
+  }
+
+  12.5% {
+    width: 48px;
+    height: 48px;
+    margin-top: 0px;
+    margin-left: 64px;
+  }
+
+  25% {
+    width: 48px;
+    height: 112px;
+    margin-top: 0px;
+    margin-left: 64px;
+  }
+
+  37.5% {
+    width: 48px;
+    height: 48px;
+    margin-top: 64px;
+    margin-left: 64px;
   }
 
   50% {
-    transform: translate(200%, 100%);
+    width: 48px;
+    height: 48px;
+    margin-top: 64px;
+    margin-left: 64px;
+  }
+
+  62.5% {
+    width: 48px;
+    height: 48px;
+    margin-top: 64px;
+    margin-left: 64px;
+  }
+
+  75% {
+    width: 48px;
+    height: 48px;
+    margin-top: 64px;
+    margin-left: 64px;
+  }
+
+  87.5% {
+    width: 48px;
+    height: 48px;
+    margin-top: 64px;
+    margin-left: 64px;
   }
 
   100% {
-    transform: translate(100%, 100%);
+    width: 112px;
+    height: 48px;
+    margin-top: 64px;
+    margin-left: 0px;
   }
 }
 
-@keyframes box4 {
-  0% {
-    transform: translate(200%, 0);
-  }
-
-  50% {
-    transform: translate(200%, 100%);
-  }
-
-  100% {
-    transform: translate(100%, 100%);
-  }
-}
 </style>
 
 
