@@ -822,16 +822,16 @@ html_component_2 = """
   <span class="title">Skills</span>
   <div class="card__tags">
     <ul class="tag">
-      <li class="tag__name">R</li>
-      <li class="tag__name">C</li>
-      <li class="tag__name">C++</li>
-      <li class="tag__name">NLP</li> 
-      <li class="tag__name">Streamlit</li>
-      <li class="tag__name">Tableau</li>
       <li class="tag__name">PowerBI</li>
+      <li class="tag__name">C++</li>
       <li class="tag__name">Langchain</li>
-      <li class="tag__name">Deep Learning</li>
+      <li class="tag__name">Streamlit</li>
+      <li class="tag__name">NLP</li>
+      <li class="tag__name">Tableau</li>
       <li class="tag__name">Machine Learning</li>
+      <li class="tag__name">R</li>
+      <li class="tag__name">Deep Learning</li>
+      <li class="tag__name">C</li>
        
     </ul>
   </div>
