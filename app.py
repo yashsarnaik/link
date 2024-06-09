@@ -855,7 +855,7 @@ body {
 
 .card {
   width: 280px;
-  height: 400px;
+  height: 410px;
   background: #f5f5f5;
   padding: 10px;
   display: flex;
