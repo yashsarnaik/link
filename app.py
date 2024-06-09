@@ -831,7 +831,7 @@ html_component_2 = """
       <li class="tag__name">Machine Learning</li>
       <li class="tag__name">R</li>
       <li class="tag__name">Deep Learning</li>
-      <li class="tag__name">C</li>
+     
        
     </ul>
   </div>
