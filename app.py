@@ -77,7 +77,7 @@ fl2="""
 .box1,
 .box2,
 .box3 {
-  border: 16px solid #f5f5f5;
+  border: 16px solid #387BF1;
   box-sizing: border-box;
   position: absolute;
   display: block;
