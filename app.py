@@ -3,6 +3,8 @@ st.set_page_config(page_title="portfolio",page_icon="🌐",layout="wide")
 from streamlit.components.v1 import html
 from PIL import Image
 import base64
+
+
 def load_css(file_path):
     with open(file_path, "r") as f:
         return f"<style>{f.read()}</style>"
@@ -14,9 +16,9 @@ st.markdown(
     f"""
     <style>
     .stApp {{
-        background: linear-gradient(45deg, #ffecd1, #d1ecff, #fff9d1, #e0e0e0);
+        background: linear-gradient(45deg, #FBDCDC,#FBE8DC,#EEFBDC,#DCFBDF,#E6FCF9,#E6F3FC,#EEE6FC,#F8E6FC,#FCE6EF,#FCE6E6);
         background-size: 800% 800%;
-        animation: gradientAnimation 30s ease infinite;
+        animation: gradientAnimation 20s ease infinite;
     }}
 
     @keyframes gradientAnimation {{
@@ -34,7 +36,6 @@ st.markdown(
     """,
     unsafe_allow_html=True
 )
-
 
 salina_regular_font = base64.b64encode(open("s1.otf", "rb").read()).decode()
 salina_italic_font = base64.b64encode(open("s2.otf", "rb").read()).decode()
@@ -61,7 +62,7 @@ salina_font_styles = f"""
 
 
 col1, col2, col3 = st.columns(3)
-col2.image(Image.open('dp1.png'))
+col2.image(Image.open('dp3.png'))
 html_component_1 = """
 <div class="social-buttons">
   <a href= 'https://github.com/yashsarnaik' target="_blank" class="social-button github">
@@ -1044,7 +1045,6 @@ oop="""
     <div class="flip-card-inner">
         <div class="flip-card-front">
             <p class="title">Currently Seeking oppurtunities for</p>
-	    <p>Tap me</p>
             
         </div>
         <div class="flip-card-back">
