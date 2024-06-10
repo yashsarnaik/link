@@ -1044,6 +1044,7 @@ oop="""
     <div class="flip-card-inner">
         <div class="flip-card-front">
             <p class="title">Currently Seeking oppurtunities for</p>
+	    <p>Tap me</p>
             
         </div>
         <div class="flip-card-back">
