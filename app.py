@@ -1,6 +1,5 @@
 import streamlit as st
 st.set_page_config(page_title="portfolio",page_icon="🌐",layout="wide")
-st.set_option('deprecation.showfileUploaderEncoding', False)  # Disables the "Hosted with Streamlit" icon
 from streamlit.components.v1 import html
 from PIL import Image
 import base64
