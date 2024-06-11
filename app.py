@@ -145,17 +145,19 @@ html_code = """
         <div class="card-SKILLS-wrapper">
 
           <div class="card-SKILLS">
- #Artificial Intelligence
-#Machine Learning
-#Generative-AI
-#Deep Learning
-#Streamlit
-#Tableau
-#PowerBI
-#Python 
-#R
-#Hugging Face
-#Data Science
+ ◈Artificial Intelligence
+◈Machine Learning
+◈Generative-AI
+◈Deep Learning
+◈Streamlit
+◈Tableau
+◈PowerBI
+◈Python 
+◈R
+◈Hugging Face
+◈Data Science
+◈Langchain
+◈NLP
 
 
           </div>
@@ -218,7 +220,7 @@ body {
 
   background-attachment: fixed;
 
-  min-height: 100vh;
+  min-height: auto;
 
   display: -webkit-box;
 
@@ -1008,235 +1010,202 @@ buttons.forEach(btn => {
 # Use the components.html function to display the HTML content
 components.html(html_code, height=600)
 
-bt1="""
 
-<button>
-<a href="https://huggingface.co/yashsarnaik23" target="_blank" class = "button"> 
-  <div class="svg-wrapper-1">
-    <div class="svg-wrapper">
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 24 24"
-        width="30"
-        height="30"
-        class="icon"
-      >
-        <path
-          d="M22,15.04C22,17.23 20.24,19 18.07,19H5.93C3.76,19 2,17.23 2,15.04C2,13.07 3.43,11.44 5.31,11.14C5.28,11 5.27,10.86 5.27,10.71C5.27,9.33 6.38,8.2 7.76,8.2C8.37,8.2 8.94,8.43 9.37,8.8C10.14,7.05 11.13,5.44 13.91,5.44C17.28,5.44 18.87,8.06 18.87,10.83C18.87,10.94 18.87,11.06 18.86,11.17C20.65,11.54 22,13.13 22,15.04Z"
-        ></path>
-      </svg>
-  </a>
-
-    </div>
-  </div>
-  
-  <span>projects</span>
-</button>
-
-
-"""
-
-
-bt2 = """
-<style>
-
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-
-button {
-  font-family: inherit;
-  font-size: 20px;
-  background: #212121;
-  color: white;
-  fill: rgb(0, 0, 0);
-  padding: 0.7em 1em;
-  padding-left: 0.9em;
-  display: flex;
-  align-items: center;
-  cursor: pointer;
-  border: none;
-  border-radius: 15px;
-  font-weight: 1000;
-}
-
-button span {
-  display: block;
-  margin-left: 0.3em;
-  transition: all 0.3s ease-in-out;
-}
-
-button svg {
-  display: block;
-  transform-origin: center center;
-  transition: transform 0.3s ease-in-out;
-}
-
-button:hover {
-  background: #000;
-}
-
-button:hover .svg-wrapper {
-  transform: scale(1.25);
-  transition: 0.5s linear;
-}
-
-button:hover svg {
-  transform: translateX(1.2em) scale(1.1);
-  fill: #fff; /* Change the fill color to white */
-}
-
-button:hover span {
-  opacity: 0;
-  transition: 0.5s linear;
-}
-
-button:active {
-  transform: scale(0.95);
-}
-
-</style>
-
-"""
-
-html(bt1+bt2,height=85)
-
-
-htm="""
-<div class="animation">Open to work for</div>
-
-"""
-
-htm2="""
-<style>
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
-  margin: 0;
-}
-@keyframes typing {
-  from {
-    width: 0;
-  }
-}
-
-@keyframes blink-caret {
-  50% {
-    border-color: transparent;
-  }
-}
-/* When you change the amount of characters in the h1, you have to change 
-the with: 14ch and  steps(14, end), if there is 14 characters, put 14, 
-if there is 20 put 20 */
-.animation {
-  font: bold 200% Consolas, Monaco, monospace;
-  border-right: .1em solid white;
-  width: 17.20ch;
-  margin: 2em 2em;
-  white-space: nowrap;
-  overflow: hidden;
-  -webkit-animation: typing 5s steps(17, end),
-	           blink-caret .5s step-end infinite alternate;
-               color: white;
-}
-
-
-
-
-</style>
-"""
-html(htm+htm2)
 
 # Load HTML file 2
 html_component_2 = """
 
-<div class="card">
-  <div class="tools">
-    <div class="circle">
-      <span class="red box"></span>
-    </div>
-    <div class="circle">
-      <span class="yellow box"></span>
-    </div>
-    <div class="circle">
-      <span class="green box"></span>
-    </div>
-  </div>
-  <div class="card__content">
-
-| NLP |
-| Langchain |
-| Data Analyst |
-| Data Engineer |
-| Deep Learning |
-| Data Scientist |
-| Machine Learning Engineer |
-
-  </div>
-</div>
-
+<a href="https://huggingface.co/yashsarnaik23" target="_blank" rel="noopener noreferrer">
+  <button>
+    <svg
+      height="24"
+      width="24"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path
+        d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+        fill="currentColor"
+      ></path>
+    </svg>
+    <span>My Projects</span>
+  </button>
+</a>
 """
 
 css2 = """
 <style>
-.card {
-  width: 370px;
-  height: 254px;
-  margin: 0 auto;
-  background-color: #F8FBFE;
-  border-radius: 8px;
-  z-index: 1;
-}
-
-.tools {
+body {
   display: flex;
-  align-items: center;
-  padding: 9px;
-}
-
-.circle {
-  padding: 0 4px;
-}
-
-.box {
-  display: inline-block;
-  align-items: center;
-  width: 10px;
-  height: 10px;
-  padding: 1px;
-  border-radius: 50%;
-}
-
-.red {
-  background-color: #ff605c;
-}
-
-.yellow {
-  background-color: #ffbd44;
-}
-
-.green {
-  background-color: #00ca4e;
-}
-
-.card__content {
-  display: flex;
-  flex-direction: column; /* Add this line */
   justify-content: center;
   align-items: center;
-  height: calc(100% - 30px);
+  height: auto;
+  margin: 0;
+}
+button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 17px;
+  padding: 0.8em 1.3em 0.8em 0.9em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 16px;
 }
 
-.card__content div {
-  text-align: center; /* Add this line */
+button svg {
+  margin-right: 3px;
+  transform: rotate(30deg);
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+button span {
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+button:hover svg {
+  transform: translateX(5px) rotate(90deg);
+}
+
+button:hover span {
+  transform: translateX(7px);
+}
+
+</style>
+"""
+
+html(css2 + html_component_2)
+
+l1="""
+<div class="card">
+    <div class="card__wrapper">
+        <div class="card___wrapper-acounts">
+            <div class="card__score">+3</div>
+            <div class="card__acounts"><svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><circle cx="64" cy="64" fill="#ffd8c9" r="60"></circle><circle cx="64" cy="64" fill="#fff" opacity=".3" r="48"></circle><path d="m64 14a31 31 0 0 1 31 31v41.07a9.93 9.93 0 0 1 -9.93 9.93h-42.14a9.93 9.93 0 0 1 -9.93-9.93v-41.07a31 31 0 0 1 31-31z" fill="#393c54"></path><circle cx="89" cy="60" fill="#fbc0aa" r="7"></circle><path d="m64 124a59.7 59.7 0 0 0 34.7-11.07l-3.33-10.29a10 10 0 0 0 -9.37-6.64h-43.95a10 10 0 0 0 -9.42 6.64l-3.33 10.29a59.7 59.7 0 0 0 34.7 11.07z" fill="#00adfe"></path><path d="m46.54 121.45a59.93 59.93 0 0 0 34.92 0l-2.46-25.45h-30z" fill="#ff8475"></path><path d="m48.13 105h31.74l-.39-4h-30.96z" fill="#f85565"></path><path d="m76 96a12 12 0 0 1 -24 0z" fill="#ffd8c9"></path><path d="m64 83v12" fill="none" stroke="#fbc0aa" stroke-linecap="round" stroke-linejoin="round" stroke-width="14"></path><circle cx="39" cy="60" fill="#fbc0aa" r="7"></circle><path d="m64 90a25 25 0 0 1 -25-25v-16.48a25 25 0 1 1 50 0v16.48a25 25 0 0 1 -25 25z" fill="#ffd8c9"></path><path d="m64 64.75v6.5" fill="none" stroke="#fbc0aa" stroke-linecap="round" stroke-linejoin="round" stroke-width="5"></path><path d="m64.83 18.35a27.51 27.51 0 0 0 -28.32 27.47v4.76a2 2 0 0 0 2 2h.58a1 1 0 0 0 .86-.49l4.05-7.09 2.48 4.13a1 1 0 0 0 1.71 0l2.48-4.13 2.47 4.13a1 1 0 0 0 1.72 0l2.47-4.13 2.48 4.13a1 1 0 0 0 1.71 0l2.48-4.13 2.48 4.13a1 1 0 0 0 1.71 0l2.48-4.13 2.47 4.13a1 1 0 0 0 1.72 0l2.47-4.13 2.48 4.13a1 1 0 0 0 1.71 0l2.48-4.13 4 7.09a1 1 0 0 0 .86.49h.58a2 2 0 0 0 2-2v-4.18c.05-14.95-11.66-27.61-26.61-28.05z" fill="#515570"></path><path d="m47.35 113h33.29l-.38-4h-32.52z" fill="#f85565"></path><path d="m46.58 121h34.84l-.39-4h-34.06z" fill="#f85565"></path><path d="m58.52 79.39c0-.84 11-.84 11 0 0 1.79-2.45 3.25-5.48 3.25s-5.52-1.46-5.52-3.25z" fill="#ff8475" opacity=".7"></path><path d="m69.48 79.29c0 .78-11 .78-11 0 .04-1.79 2.52-3.29 5.52-3.29s5.48 1.5 5.48 3.29z" fill="#f85565" opacity=".7"></path><circle cx="76.25" cy="58.75" fill="#515570" r="3"></circle><path d="m70.75 59.84a6.61 6.61 0 0 1 11.5-1.31" fill="none" stroke="#515570" stroke-linecap="round" stroke-linejoin="round"></path><path d="m72.11 51.46 5.68-.4a4.62 4.62 0 0 1 4.21 2.1l.77 1.21" style="fill:none;stroke-linecap:round;stroke-linejoin:round;stroke:#515570;stroke-width:2;opacity:.2"></path><circle cx="51.75" cy="58.75" fill="#515570" r="3"></circle><g fill="none" stroke-linecap="round"><path d="m57.25 59.84a6.61 6.61 0 0 0 -11.5-1.31" stroke="#515570" stroke-linejoin="round"></path><path d="m55.89 51.45-5.68-.39a4.59 4.59 0 0 0 -4.21 2.11l-.77 1.21" opacity=".2" stroke="#515570" stroke-linejoin="round" stroke-width="2"></path><path d="m57.25 78.76a17.4 17.4 0 0 0 6.75 1.12 17.4 17.4 0 0 0 6.75-1.12" stroke="#f85565" stroke-miterlimit="10"></path></g></svg></div>
+            <div class="card__acounts"><svg viewBox="0 0 128 128" xmlns="http://www.w3.org/2000/svg"><circle cx="64" cy="64" fill="#ff8475" r="60"></circle><circle cx="64" cy="64" fill="#f85565" opacity=".4" r="48"></circle><path d="m64 14a32 32 0 0 1 32 32v41a6 6 0 0 1 -6 6h-52a6 6 0 0 1 -6-6v-41a32 32 0 0 1 32-32z" fill="#7f3838"></path><path d="m62.73 22h2.54a23.73 23.73 0 0 1 23.73 23.73v42.82a4.45 4.45 0 0 1 -4.45 4.45h-41.1a4.45 4.45 0 0 1 -4.45-4.45v-42.82a23.73 23.73 0 0 1 23.73-23.73z" fill="#393c54" opacity=".4"></path><circle cx="89" cy="65" fill="#fbc0aa" r="7"></circle><path d="m64 124a59.67 59.67 0 0 0 34.69-11.06l-3.32-9.3a10 10 0 0 0 -9.37-6.64h-43.95a10 10 0 0 0 -9.42 6.64l-3.32 9.3a59.67 59.67 0 0 0 34.69 11.06z" fill="#4bc190"></path><path d="m45 110 5.55 2.92-2.55 8.92a60.14 60.14 0 0 0 9 1.74v-27.08l-12.38 10.25a2 2 0 0 0 .38 3.25z" fill="#356cb6" opacity=".3"></path><path d="m71 96.5v27.09a60.14 60.14 0 0 0 9-1.74l-2.54-8.93 5.54-2.92a2 2 0 0 0 .41-3.25z" fill="#356cb6" opacity=".3"></path><path d="m57 123.68a58.54 58.54 0 0 0 14 0v-25.68h-14z" fill="#fff"></path><path d="m64 88.75v9.75" fill="none" stroke="#fbc0aa" stroke-linecap="round" stroke-linejoin="round" stroke-width="14"></path><circle cx="39" cy="65" fill="#fbc0aa" r="7"></circle><path d="m64 91a25 25 0 0 1 -25-25v-16.48a25 25 0 1 1 50 0v16.48a25 25 0 0 1 -25 25z" fill="#ffd8c9"></path><path d="m91.49 51.12v-4.72c0-14.95-11.71-27.61-26.66-28a27.51 27.51 0 0 0 -28.32 27.42v5.33a2 2 0 0 0 2 2h6.81a8 8 0 0 0 6.5-3.33l4.94-6.88a18.45 18.45 0 0 1 1.37 1.63 22.84 22.84 0 0 0 17.87 8.58h13.45a2 2 0 0 0 2.04-2.03z" fill="#bc5b57"></path><path d="m62.76 36.94c4.24 8.74 10.71 10.21 16.09 10.21h5" style="fill:none;stroke-linecap:round;stroke:#fff;stroke-miterlimit:10;stroke-width:2;opacity:.1"></path><path d="m71 35c2.52 5.22 6.39 6.09 9.6 6.09h3" style="fill:none;stroke-linecap:round;stroke:#fff;stroke-miterlimit:10;stroke-width:2;opacity:.1"></path><circle cx="76" cy="62.28" fill="#515570" r="3"></circle><circle cx="52" cy="62.28" fill="#515570" r="3"></circle><ellipse cx="50.42" cy="69.67" fill="#f85565" opacity=".1" rx="4.58" ry="2.98"></ellipse><ellipse cx="77.58" cy="69.67" fill="#f85565" opacity=".1" rx="4.58" ry="2.98"></ellipse><g fill="none" stroke-linecap="round" stroke-linejoin="round"><path d="m64 67v4" stroke="#fbc0aa" stroke-width="4"></path><path d="m55 56h-9.25" opacity=".2" stroke="#515570" stroke-width="2"></path><path d="m82 56h-9.25" opacity=".2" stroke="#515570" stroke-width="2"></path></g><path d="m64 84c5 0 7-3 7-3h-14s2 3 7 3z" fill="#f85565" opacity=".4"></path><path d="m65.07 78.93-.55.55a.73.73 0 0 1 -1 0l-.55-.55c-1.14-1.14-2.93-.93-4.27.47l-1.7 1.6h14l-1.66-1.6c-1.34-1.4-3.13-1.61-4.27-.47z" fill="#f85565"></path></svg></div>
+        </div>
+        <div class="card__menu"><svg fill="none" height="20" viewBox="0 0 4 20" width="4" xmlns="http://www.w3.org/2000/svg"><g fill="#000"><path d="m2 4c1.10457 0 2-.89543 2-2s-.89543-2-2-2-2 .89543-2 2 .89543 2 2 2z"></path><path d="m2 12c1.10457 0 2-.8954 2-2 0-1.10457-.89543-2-2-2s-2 .89543-2 2c0 1.1046.89543 2 2 2z"></path><path d="m2 20c1.10457 0 2-.8954 2-2s-.89543-2-2-2-2 .8954-2 2 .89543 2 2 2z"></path></g></svg></div>
+    </div>
+    <div class="card__title">Job interest</div>
+    <div class="card__subtitle">▸AI/ML Engineer ▸Data Scientist ▸LLM ▸Data Engineer ▸MLOps ▸Deep Learning ▸Neural Networks training ▸Analysis ▸Visualization.</div>
+  
+
+"""
+
+
+l2="""
+<style>
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+  margin: 0;
+}
+.card {
+  --main-color: #000;
+  --bg-color: linear-gradient(135deg, #8DD4EB, #FFFFFF);
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  width: 300px;
+  padding: 15px;
+  background: var(--bg-color);
+  border-radius: 20px;
+}
+
+.card__wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card___wrapper-acounts {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.card___wrapper-acounts > div:nth-child(2) {
+  position: absolute;
+  left: 25px;
+  z-index: -1;
+}
+
+.card___wrapper-acounts > div:nth-child(3) {
+  position: absolute;
+  left: 50px;
+  z-index: -2;
+}
+
+.card__score {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 500;
+  font-size: 16px;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background: var(--main-color);
+}
+
+.card__acounts {
+  width: 42px;
+  height: 42px;
+}
+
+.card__acounts svg {
+  width: 100%;
+  height: 100%;
+}
+
+.card__menu {
+  width: 40px;
+  height: 40px;
+  background: var(--bg-color);
+  border-radius: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.card__title {
+  margin-top: 20px;
+  font-weight: 900;
+  font-size: 25px;
+  color: var(--main-color);
+}
+
+.card__subtitle {
+  margin-top: 10px;
+  font-weight: 400;
+  font-size: 15px;
+  color: var(--main-color);
+}
+
+
+
+.card__progress progress::-webkit-progress-bar {
+  background-color: #00000030;
+  border-radius: 100px;
+}
+
+.card__progress progress::-webkit-progress-value {
+  background-color: var(--main-color);
+  border-radius: 100px;
 }
 </style>
 """
 
-html(css2 + html_component_2, height=600)
+html(l1+l2,height=400)
