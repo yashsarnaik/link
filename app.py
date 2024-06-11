@@ -14,7 +14,7 @@ st.markdown(
          f"""
          <style>
          .stApp {{
-             background-image: url("  https://images.pexels.com/photos/3308588/pexels-photo-3308588.jpeg?cs=srgb&dl=pexels-zamiir-3308588.jpg&fm=jpg  ");
+             background-image: url("   https://images.pexels.com/photos/2387532/pexels-photo-2387532.jpeg?cs=srgb&dl=pexels-adrien-olichon-1257089-2387532.jpg&fm=jpg ");
              background-attachment: fixed;
              background-color: transparent;
              background-size: cover;
