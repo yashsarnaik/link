@@ -320,7 +320,7 @@ body {
 
 .card[data-state="#about"] {
 
-  height: 580px;
+  height: 550px;
 
 }
 
