@@ -1,6 +1,6 @@
 
 import streamlit as st
-st.set_page_config(page_title="portfolio",page_icon="🌐",layout="centered")
+st.set_page_config(page_title="portfolio",page_icon="🌐",layout="wide")
 import streamlit.components.v1 as components
 from streamlit.components.v1 import html
 import base64
