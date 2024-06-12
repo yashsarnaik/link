@@ -14,7 +14,7 @@ st.markdown(
          f"""
          <style>
          .stApp {{
-             background-image: url("https://img.freepik.com/free-photo/3d-abstract-background-with-network-connections-low-poly-plexus-design_1048-11867.jpg?t=st=1718175542~exp=1718179142~hmac=e6c2163951c6203f40fcffe5a9435668391c1a5f4c5725d61d347a8be0c39022&w=1060");
+             background-image: url("https://www.teahub.io/photos/full/14-146559_digital.jpg");
              background-attachment: fixed;
              background-color: transparent;
              background-size: cover;
