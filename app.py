@@ -1,3 +1,4 @@
+
 import streamlit as st
 st.set_page_config(page_title="portfolio",page_icon="🌐",layout="centered")
 import streamlit.components.v1 as components
@@ -14,7 +15,7 @@ st.markdown(
          f"""
          <style>
          .stApp {{
-             background-image: url("https://www.hsph.harvard.edu/news/wp-content/uploads/sites/21/2020/05/AI-1024x683.jpg");
+             background-image: url("https://images.pexels.com/photos/2603464/pexels-photo-2603464.jpeg?cs=srgb&dl=pexels-apasaric-2603464.jpg&fm=jpg&_gl=1*z2i1dt*_ga*MTYwMDUzNTg5OS4xNzE3NzgxMTc1*_ga_8JE65Q40S6*MTcxODIxNDg2OC44LjEuMTcxODIxNDg5Ny4wLjAuMA..");
              background-attachment: fixed;
              background-color: transparent;
              background-size: cover;
@@ -23,7 +24,6 @@ st.markdown(
          """,
          unsafe_allow_html=True
      )
-
 
 
 # Your HTML, CSS, and JavaScript code
@@ -162,15 +162,59 @@ html_code = """
 
           </div>
 
-          <div class="card-SKILLS">
+        </div>
 
+      </div>
 
+    </div>
+    <div class="card-section" id="Projects">
 
-</div>
+      <div class="card-content">
 
-          <div class="card-SKILLS">
+        <div class="card-subtitle">Major college projects</div>
 
+        <div class="card-timeline">
 
+          <div class="card-item" data-year="2022">
+
+            <div class="card-desc">4th semester <span></span></div>
+
+            <div class="card-item-title">Image Encryption using python.</div>
+
+          </div>
+
+          <div class="card-item" data-year="2023">
+
+            <div class="card-desc">6th semester<span></span></div>
+
+            <div class="card-item-title">Fake news prediction using Machine Learning.</div>
+
+          </div>
+
+          <div class="card-item" data-year="2024">
+
+            <div class="card-item-desc">8th Semester</span></div>
+
+            <div class="card-item-title">Early stage Alzheimer's detection using Deep Learning.</div>
+
+            <br>Link to all of my projects deployed on Hugging-Face</br>
+            <a href="https://huggingface.co/yashsarnaik23" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+  <button>
+    <svg
+      height="24"
+      width="24"
+      viewBox="0 0 24 24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M0 0h24v24H0z" fill="none"></path>
+      <path
+        d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
+        fill="currentColor"
+      ></path>
+    </svg>
+    <span>My Projects</span>
+  </button>
+</a>
 
           </div>
 
@@ -181,6 +225,8 @@ html_code = """
       </div>
 
     </div>
+    
+    
 
     <div class="card-buttons">
 
@@ -190,11 +236,14 @@ html_code = """
 
       <button data-section="#SKILLS">SKILLS</button>
 
+      <button data-section="#Projects">PROJECTS</button>
+
     </div>
 
   </div>
 
 </div>
+
     <style>
 @import url("https://fonts.googleapis.com/css?family=DM+Sans:400,500|Jost:400,500,600&display=swap");
 
@@ -291,7 +340,11 @@ body {
   height: 550px;
 
 }
+.card[data-state="#Projects"] {
 
+  height: 630px;
+
+}
 .card.is-active .card-header {
 
   height: 80px;
@@ -558,7 +611,7 @@ body {
 
           align-items: center;
 
-  padding: 0 20px;
+  padding: 20px;
 
   margin-bottom: 30px;
 
@@ -726,6 +779,41 @@ body {
   -webkit-animation: fadeIn 0.6s both;
 
           animation: fadeIn 0.6s both;
+
+button {
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  cursor: pointer;
+  font-weight: 500;
+  font-size: 9px;
+  padding: 0.8em 1.3em 0.8em 0.9em;
+  color: white;
+  background: #ad5389;
+  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
+  border: none;
+  letter-spacing: 0.05em;
+  border-radius: 16px;
+}
+
+button svg {
+  margin-right: 0px;
+  transform: rotate(30deg);
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+button span {
+  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
+}
+
+button:hover svg {
+  transform: translateX(5px) rotate(90deg);
+}
+
+button:hover span {
+  transform: translateX(7px);
+}
+          
 
 }
 
@@ -1008,79 +1096,24 @@ buttons.forEach(btn => {
 """
 
 # Use the components.html function to display the HTML content
-components.html(html_code, height=600)
+components.html(html_code, height=700)
+
+r1="""
 
 
 
-# Load HTML file 2
-html_component_2 = """
-
-<a href="https://huggingface.co/yashsarnaik23" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
-  <button>
-    <svg
-      height="24"
-      width="24"
-      viewBox="0 0 24 24"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path d="M0 0h24v24H0z" fill="none"></path>
-      <path
-        d="M5 13c0-5.088 2.903-9.436 7-11.182C16.097 3.564 19 7.912 19 13c0 .823-.076 1.626-.22 2.403l1.94 1.832a.5.5 0 0 1 .095.603l-2.495 4.575a.5.5 0 0 1-.793.114l-2.234-2.234a1 1 0 0 0-.707-.293H9.414a1 1 0 0 0-.707.293l-2.234 2.234a.5.5 0 0 1-.793-.114l-2.495-4.575a.5.5 0 0 1 .095-.603l1.94-1.832C5.077 14.626 5 13.823 5 13zm1.476 6.696l.817-.817A3 3 0 0 1 9.414 18h5.172a3 3 0 0 1 2.121.879l.817.817.982-1.8-1.1-1.04a2 2 0 0 1-.593-1.82c.124-.664.187-1.345.187-2.036 0-3.87-1.995-7.3-5-8.96C8.995 5.7 7 9.13 7 13c0 .691.063 1.372.187 2.037a2 2 0 0 1-.593 1.82l-1.1 1.039.982 1.8zM12 13a2 2 0 1 1 0-4 2 2 0 0 1 0 4z"
-        fill="currentColor"
-      ></path>
-    </svg>
-    <span>My Projects</span>
-  </button>
-</a>
 """
 
-css2 = """
+r2="""
 <style>
-body {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: auto;
-  margin: 0;
-}
-button {
-  display: flex;
-  align-items: center;
-  font-family: inherit;
-  cursor: pointer;
-  font-weight: 500;
-  font-size: 17px;
-  padding: 0.8em 1.3em 0.8em 0.9em;
-  color: white;
-  background: #ad5389;
-  background: linear-gradient(to right, #0f0c29, #302b63, #24243e);
-  border: none;
-  letter-spacing: 0.05em;
-  border-radius: 16px;
-}
 
-button svg {
-  margin-right: 3px;
-  transform: rotate(30deg);
-  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-}
-
-button span {
-  transition: transform 0.5s cubic-bezier(0.76, 0, 0.24, 1);
-}
-
-button:hover svg {
-  transform: translateX(5px) rotate(90deg);
-}
-
-button:hover span {
-  transform: translateX(7px);
-}
 
 </style>
+
 """
 
-html(css2 + html_component_2)
+# Load HTML file 2
+
 
 l1="""
 <div class="card">
@@ -1093,7 +1126,14 @@ l1="""
         <div class="card__menu"><svg fill="none" height="20" viewBox="0 0 4 20" width="4" xmlns="http://www.w3.org/2000/svg"><g fill="#000"><path d="m2 4c1.10457 0 2-.89543 2-2s-.89543-2-2-2-2 .89543-2 2 .89543 2 2 2z"></path><path d="m2 12c1.10457 0 2-.8954 2-2 0-1.10457-.89543-2-2-2s-2 .89543-2 2c0 1.1046.89543 2 2 2z"></path><path d="m2 20c1.10457 0 2-.8954 2-2s-.89543-2-2-2-2 .8954-2 2 .89543 2 2 2z"></path></g></svg></div>
     </div>
     <div class="card__title">Job interest</div>
-    <div class="card__subtitle">▸AI/ML Engineer ▸Data Scientist ▸LLM ▸Data Engineer ▸MLOps ▸Deep Learning ▸Neural Networks training ▸Analysis ▸Visualization.</div>
+    <div class="card__subtitle">▸AI/ML Engineer ▸Data Scientist ▸LLM ▸Data Engineer ▸MLOps ▸Deep Learning ▸Neural Networks training ▸Analysis ▸Visualization.
+    <p>
+    <a href="https://github.com/yashsarnaik/link/blob/aebcaed7543e4564a2d71c3a21117fefb2b2b76b/requirements.txt" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+    <button class="button" type="button">
+  <span class="button__text">My Resume</span>
+  <span class="button__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 35 35" id="bdd05811-e15d-428c-bb53-8661459f9307" data-name="Layer 2" class="svg"><path d="M17.5,22.131a1.249,1.249,0,0,1-1.25-1.25V2.187a1.25,1.25,0,0,1,2.5,0V20.881A1.25,1.25,0,0,1,17.5,22.131Z"></path><path d="M17.5,22.693a3.189,3.189,0,0,1-2.262-.936L8.487,15.006a1.249,1.249,0,0,1,1.767-1.767l6.751,6.751a.7.7,0,0,0,.99,0l6.751-6.751a1.25,1.25,0,0,1,1.768,1.767l-6.752,6.751A3.191,3.191,0,0,1,17.5,22.693Z"></path><path d="M31.436,34.063H3.564A3.318,3.318,0,0,1,.25,30.749V22.011a1.25,1.25,0,0,1,2.5,0v8.738a.815.815,0,0,0,.814.814H31.436a.815.815,0,0,0,.814-.814V22.011a1.25,1.25,0,1,1,2.5,0v8.738A3.318,3.318,0,0,1,31.436,34.063Z"></path></svg></span>
+</button>
+</p>
   
 
 """
@@ -1112,7 +1152,7 @@ body {
   --main-color: #000;
   --bg-color: linear-gradient(135deg, #8DD4EB, #FFFFFF);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  width: 300px;
+  width: 320px;
   padding: 15px;
   background: var(--bg-color);
   border-radius: 20px;
@@ -1204,6 +1244,70 @@ body {
 .card__progress progress::-webkit-progress-value {
   background-color: var(--main-color);
   border-radius: 100px;
+}
+
+
+.button {
+  --main-focus: #2d8cf0;
+  --font-color: #323232;
+  --bg-color-sub: #dedede;
+  --bg-color: #eee;
+  --main-color: #323232;
+  position: relative;
+  width: 150px;
+  height: 40px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  border: 2px solid var(--main-color);
+  box-shadow: 4px 4px var(--main-color);
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.button, .button__icon, .button__text {
+  transition: all 0.3s;
+}
+
+.button .button__text {
+  transform: translateX(22px);
+  color: var(--font-color);
+  font-weight: 600;
+}
+
+.button .button__icon {
+  position: absolute;
+  transform: translateX(109px);
+  height: 100%;
+  width: 39px;
+  background-color: var(--bg-color-sub);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.button .svg {
+  width: 20px;
+  fill: var(--main-color);
+}
+
+.button:hover {
+  background: var(--bg-color);
+}
+
+.button:hover .button__text {
+  color: transparent;
+}
+
+.button:hover .button__icon {
+  width: 148px;
+  transform: translateX(0);
+}
+
+.button:active {
+  transform: translate(3px, 3px);
+  box-shadow: 0px 0px var(--main-color);
 }
 </style>
 """
