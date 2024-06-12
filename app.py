@@ -284,7 +284,7 @@ body {
 
 .card {
 
-  max-width: 430px;
+  max-width: 340px;
 
   margin: auto;
 
@@ -320,7 +320,7 @@ body {
 
 .card[data-state="#about"] {
 
-  height: 520px;
+  height: 600px;
 
 }
 
