@@ -14,7 +14,7 @@ st.markdown(
          f"""
          <style>
          .stApp {{
-             background-image: url("https://www.teahub.io/photos/full/14-146559_digital.jpg");
+             background-image: url("https://www.hsph.harvard.edu/news/wp-content/uploads/sites/21/2020/05/AI-1024x683.jpg");
              background-attachment: fixed;
              background-color: transparent;
              background-size: cover;
