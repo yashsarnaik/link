@@ -92,6 +92,11 @@ html_code = """
     </svg>
 </a>
 
+<div class="tooltip-container">
+  <span class="tooltip">yashsarnaik2303@gmail.com</span>
+  <span class="text">@</span>
+</div>
+
 
       </div>
 
@@ -281,6 +286,93 @@ body {
   padding: 10px;
 
 }
+.tooltip-container {
+  height: 27px;
+  width: 37px;
+  border-radius: 5px;
+  background-color: #fff;
+  background-image: linear-gradient(
+    to left bottom,
+    #f2f5f8,
+    #ecf1f2,
+    #e7eceb,
+    #e3e7e4,
+    #e1e2de
+  );
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+ 
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.tooltip-container::before {
+  position: absolute;
+  content: "";
+  top: -50%;
+  clip-path: polygon(50% 0, 0 100%, 100% 100%);
+  border-radius: 5px;
+  background-color: fff;
+  background-image: linear-gradient(
+    to left bottom,
+    #f2f5f8,
+    #e4eaec,
+    #d8dfde,
+    #cdd3cf,
+    #c5c7c1
+  );
+  width: 100%;
+  height: 50%;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) rotateX(-150deg) translateY(-110%);
+  transition: transform 0.3s ease;
+}
+
+.tooltip-container .text {
+  color: rgb(32, 30, 30);
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.tooltip {
+  position: absolute;
+  top: -20px;
+  opacity: 0;
+
+
+
+
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition-duration: 0.2s;
+  pointer-events: none;
+  letter-spacing: 0.5px;
+  font-size: 10px;
+  font-weight: 600;
+  text-shadow: 10px salmon;
+}
+.tooltip-container:hover {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.tooltip-container:hover::before {
+  transform: rotateY(0);
+  background-image: none;
+  background-color: white;
+}
+
+.tooltip-container:hover .tooltip {
+  top: -30px;
+  opacity: 1;
+  transition-duration: 0.3s;
+}
+
 
 .card {
 
@@ -1314,5 +1406,4 @@ body {
 """
 
 html(l1+l2,height=400)
-
 
