@@ -1381,7 +1381,7 @@ body {
 }
 
 .button .svg {
-  width: 20px;
+  width: 18px;
   fill: var(--main-color);
 }
 
