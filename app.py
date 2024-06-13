@@ -1347,7 +1347,7 @@ body {
   --bg-color: #eee;
   --main-color: #323232;
   position: relative;
-  width: 150px;
+  width: 160px;
   height: 40px;
   cursor: pointer;
   display: flex;
