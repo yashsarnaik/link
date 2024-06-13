@@ -376,7 +376,7 @@ body {
 
 .card {
 
-  max-width: 340px;
+  max-width: 380px;
 
   margin: auto;
 
