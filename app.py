@@ -108,15 +108,13 @@ html_code = """
 
         <div class="card-subtitle">EDUCATION</div>
 
-        <div class="card-timeline">
+    <div class="card-item" data-year="2024">
 
-          <div class="card-item" data-year="2018">
+            <div class="card-item-title">B.Tech in<span> Data Science</span></div>
 
-            <div class="card-item-title">10th SSC <span></span></div>
+            <div class="card-item-desc">Dr. D.Y Patil Prathisthan's College of Engineering,Kolhapur.
 
-            <div class="card-item-desc">Saint Alphonsa convent school,Kolhapur.</div>
-
-          </div>
+</div>
 
           <div class="card-item" data-year="2020">
 
@@ -126,11 +124,15 @@ html_code = """
 
           </div>
 
-          <div class="card-item" data-year="2024">
+          
 
-            <div class="card-item-title">B.Tech in<span> Data Science</span></div>
+          </div>
 
-            <div class="card-item-desc">Dr. D.Y Patil Prathisthan's College of Engineering,Kolhapur.</div>
+<div class="card-item" data-year="2018">
+
+            <div class="card-item-title">10th SSC <span></span></div>
+
+            <div class="card-item-desc">Saint Alphonsa convent school,Kolhapur.</div>
 
           </div>
 
