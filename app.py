@@ -1249,7 +1249,7 @@ body {
   --main-color: #000;
   --bg-color: linear-gradient(135deg, #8DD4EB, #FFFFFF);
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  width: 275px;
+  width: 380px;
   padding: 15px;
   background: var(--bg-color);
   border-radius: 20px;
