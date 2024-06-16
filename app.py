@@ -109,6 +109,23 @@ html_code = """
         <div class="card-subtitle">EDUCATION</div>
 
         <div class="card-timeline">
+        
+          <div class="card-item" data-year="2024">
+
+            <div class="card-item-title">B.Tech in<span> Data Science</span></div>
+
+            <div class="card-item-desc">Dr. D.Y Patil Prathisthan's College of Engineering,Kolhapur.</div>
+
+          </div>
+
+
+                    <div class="card-item" data-year="2020">
+
+            <div class="card-item-title">12th HSC<span></span></div>
+
+            <div class="card-item-desc">Kolhapur high school and junior college,Kolhapur.</div>
+
+          </div>
 
           <div class="card-item" data-year="2018">
 
@@ -118,21 +135,8 @@ html_code = """
 
           </div>
 
-          <div class="card-item" data-year="2020">
 
-            <div class="card-item-title">12th HSC<span></span></div>
 
-            <div class="card-item-desc">Kolhapur high school and junior college,Kolhapur.</div>
-
-          </div>
-
-          <div class="card-item" data-year="2024">
-
-            <div class="card-item-title">B.Tech in<span> Data Science</span></div>
-
-            <div class="card-item-desc">Dr. D.Y Patil Prathisthan's College of Engineering,Kolhapur.</div>
-
-          </div>
 
 
 
@@ -1406,4 +1410,3 @@ body {
 """
 
 html(l1+l2,height=400)
-
