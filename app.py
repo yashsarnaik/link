@@ -209,7 +209,7 @@ html_code = """
 
             <br>Link to all of my projects deployed on Hugging-Face</br>
             <a href="https://huggingface.co/yashsarnaik23" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
- <br>
+ 
   <button>
     <svg
       height="24"
@@ -226,7 +226,7 @@ html_code = """
     <span>My Projects</span>
   </button>
 </a>
-</br>
+
 
           </div>
 
