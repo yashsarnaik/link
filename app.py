@@ -187,7 +187,7 @@ html_code = """
 
           <div class="card-item" data-year="2022">
 
-            <div class="card-desc">4th semester <span></span></div>
+            <div class="card-desc"> <span></span></div>
 
             <div class="card-item-title">Image Encryption using python.</div>
 
@@ -195,7 +195,7 @@ html_code = """
 
           <div class="card-item" data-year="2023">
 
-            <div class="card-desc">6th semester<span></span></div>
+            <div class="card-desc"><span></span></div>
 
             <div class="card-item-title">Fake news prediction using Machine Learning.</div>
 
@@ -203,7 +203,7 @@ html_code = """
 
           <div class="card-item" data-year="2024">
 
-            <div class="card-item-desc">8th Semester</span></div>
+            <div class="card-item-desc"></span></div>
 
             <div class="card-item-title">Early stage Alzheimer's detection using Deep Learning.</div>
 
