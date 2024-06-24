@@ -209,6 +209,7 @@ html_code = """
 
             <br>Link to all of my projects deployed on Hugging-Face</br>
             <a href="https://huggingface.co/yashsarnaik23" target="_blank" rel="noopener noreferrer" style="text-decoration: none;">
+ <br>
   <button>
     <svg
       height="24"
@@ -225,6 +226,7 @@ html_code = """
     <span>My Projects</span>
   </button>
 </a>
+</br>
 
           </div>
 
@@ -439,7 +441,7 @@ body {
 }
 .card[data-state="#Projects"] {
 
-  height: 630px;
+  height: 590px;
 
 }
 .card.is-active .card-header {
@@ -1195,21 +1197,6 @@ buttons.forEach(btn => {
 # Use the components.html function to display the HTML content
 components.html(html_code, height=700)
 
-r1="""
-
-
-
-"""
-
-r2="""
-<style>
-
-
-</style>
-
-"""
-
-# Load HTML file 2
 
 
 l1="""
